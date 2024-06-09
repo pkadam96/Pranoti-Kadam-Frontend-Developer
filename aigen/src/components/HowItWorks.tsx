@@ -14,7 +14,7 @@ const HowItWorks: React.FC = () => {
 
     return (
         <>
-            <div className='flex flex-col lg:flex-row items-center gap-12 mb-20'>
+            <div className='flex flex-col lg:flex-row items-center gap-12 mb-36'>
                 <div>
                     <img src={Avatar} alt="Avatar Image" className='p-4'/>
                 </div>

@@ -4,27 +4,34 @@ import img2 from '../assets/ColumnImage2.png';
 import img3 from '../assets/ColumnImage3.png';
 import { Navbar } from './Navbar';
 
-
 const Header: React.FC = () => {
     return (
         <>
             <Navbar />
-            <div className='flex h-full gap-24'>
-                <div className='flex justify-center items-center ml-48'>
-                    <div>
-                        <p className='px-2 py-0.5 rounded-lg frosted-glass inline-block mb-16 mt-28'>🎉New in AI.GEN: Real Time Interaction</p>
-                        <h1 className='text-5xl font-medium leading-12' style={{color:"#e9e8e9"}}>IOTA polygon serum ipsum <br /> <span style={{color:"#a39faa"}}>WAX terraUSD gala THETA.</span></h1>
-                        <h2 className='leading-10 text-2xl my-8' >Chiliz serum TRON dash aave cardano crypto celo. Golem <br />ankr bancor horizen ethereum quant bitcoin.</h2>
-                        <button className="w-48 h-16 text-2xl px-6 pt-3 pb-2.5 sm:px-4 sm:py-3 font-medium rounded-lg my-4" style={{ background: 'linear-gradient(45deg, #9E6EE5 0%, #FA75F8 100%)' }}>Get Started</button>
+              <div className='relative top-16 lg:top-0 w-full h-screen flex lg:flex-row gap-6 lg:gap-24 z-20'>
+                <div className='absolute inset-0 lg:relative flex lg:hidden'>
+                    <div className='flex w-full'>
+                        <img src={img1} className='w-1/3'/>
+                        <img src={img2} className='w-1/3'/>
+                        <img src={img3} className='w-1/3'/>
                     </div>
                 </div>
-                <div className='flex self-end'>
-                    <img src={img1} alt="" />
-                    <img src={img2} alt="" />
-                    <img src={img3} alt="" />
+                <div className='flex justify-center items-center lg:pt-0 lg:ml-40 z-10 lg:z-auto bg-opacity-50 lg:bg-opacity-0 bg-black lg:bg-transparent'>
+                    <div className='text-center lg:text-left p-6 lg:p-0'>
+                        <p className='px-2 py-0.5 rounded-lg frosted-glass inline-block mb-8 text-sm lg:text-lg lg:mb-16 lg:mt-28'>🎉New in AI.GEN: Real Time Interaction</p>
+                        <h1 className='text-2xl lg:text-5xl font-medium leading-8 lg:leading-12' style={{ color: "#e9e8e9" }}>IOTA polygon serum ipsum <br /> <span style={{ color: "#a39faa" }}>WAX terraUSD gala THETA.</span></h1>
+                        <h2 className='leading-6 lg:leading-10 text-sm lg:text-2xl my-4 lg:my-8'>Chiliz serum TRON dash aave cardano crypto celo. Golem <br />ankr bancor horizen ethereum quant bitcoin.</h2>
+                        <button className="w-32 lg:w-48 h-12 lg:h-16 text-sm lg:text-2xl px-4 lg:px-6 pt-2 lg:pt-3 pb-1.5 lg:pb-2.5 font-medium rounded-lg my-4" style={{ background: 'linear-gradient(45deg, #9E6EE5 0%, #FA75F8 100%)' }}>Get Started</button>
+                    </div>
+                </div>
+                <div className='hidden lg:flex lg:self-end lg:relative lg:z-0 lg:ml-auto'>
+                    <img src={img1} alt="" className='w-full h-auto opacity-50 lg:opacity-100' />
+                    <img src={img2} alt="" className='w-full h-auto opacity-50 lg:opacity-100' />
+                    <img src={img3} alt="" className='w-full h-auto opacity-50 lg:opacity-100' />
                 </div>
             </div>
         </>
-    )
+    );
 }
+
 export { Header }

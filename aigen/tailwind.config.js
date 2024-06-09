@@ -19,7 +19,8 @@ export default {
         'widest': '.35em',
       },
       lineHeight:{
-        '12':'59px'
+        '12':'59px',
+        '13':'64px'
       }
     },
     screens: {

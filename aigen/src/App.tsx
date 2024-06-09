@@ -1,11 +1,11 @@
 import { Header } from "./components/Header"
-// import { Navbar } from "./components/Navbar"
+import { IntroComponent } from "./components/IntroComponent"
 
 function App() {
   return (
     <>
-      {/* <Navbar/> */}
       <Header/>
+      <IntroComponent/>
     </>
   )
 }

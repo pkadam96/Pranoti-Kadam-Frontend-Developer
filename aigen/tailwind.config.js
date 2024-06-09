@@ -21,7 +21,16 @@ export default {
       lineHeight:{
         '12':'59px',
         '13':'64px'
-      }
+      },
+      animation: {
+        gradient: 'gradientAnimation 1s linear infinite alternate',
+      },
+      keyframes: {
+        gradientAnimation: {
+          '0%': { backgroundPosition: '0%' },
+          '100%': { backgroundPosition: '100%' },
+        },
+      },
     },
     screens: {
       'sm': '640px',   // Target mobile screens
@@ -30,6 +39,7 @@ export default {
       'xl': '1280px',  // Target larger screens
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 }
 

@@ -8,8 +8,8 @@ const Header: React.FC = () => {
     return (
         <>
             <Navbar />
-              <div className='relative top-16 lg:top-0 w-full h-screen flex lg:flex-row gap-6 lg:gap-24 z-20'>
-                <div className='absolute inset-0 lg:relative flex lg:hidden'>
+              <div className='relative top-16 lg:top-0 w-full h-screen flex lg:flex-row gap-6 lg:gap-24  z-20'>
+                <div className='absolute inset-0 lg:relative flex  lg:hidden'>
                     <div className='flex w-full'>
                         <img src={img1} className='w-1/3'/>
                         <img src={img2} className='w-1/3'/>

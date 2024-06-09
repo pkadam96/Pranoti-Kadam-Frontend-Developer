@@ -16,7 +16,10 @@ export default {
         '1': '1px',
       },
       letterSpacing: {
-        widest: '.35em',
+        'widest': '.35em',
+      },
+      lineHeight:{
+        '12':'59px'
       }
     },
     screens: {

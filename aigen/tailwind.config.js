@@ -23,12 +23,28 @@ export default {
         '13':'64px'
       },
       animation: {
-        gradient: 'gradientAnimation 1s linear infinite alternate',
+        'gradient': 'gradientAnimation 1s linear infinite alternate',
+        'slide-in-right': 'slideInRight 0.5s ease-out',
+        'right-to-left': 'moveRightToLeft 50s linear infinite',
+        'left-to-right': 'moveLeftToRight 50s linear infinite',
+
       },
       keyframes: {
         gradientAnimation: {
           '0%': { backgroundPosition: '0%' },
           '100%': { backgroundPosition: '100%' },
+        },
+        slideInRight: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        moveRightToLeft: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        moveLeftToRight: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0%)' },
         },
       },
     },

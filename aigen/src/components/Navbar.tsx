@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
           </ul>
           <div className="flex flex-col lg:flex-row md:flex-row gap-3">
             <button className="w-36 px-6 pt-3 pb-2.5 sm:px-4 sm:py-3 font-medium rounded frosted-glass">Whitepaper</button>
-            <button className="w-36 px-6 pt-3 pb-2.5 sm:px-4 sm:py-3 font-medium rounded" style={{ background: 'linear-gradient(45deg, #9E6EE5 0%, #FA75F8 100%)' }}>Get Started</button>
+            <button className="w-36 px-6 pt-3 pb-2.5 sm:px-4 sm:py-3 font-medium rounded bg-gradient-to-r from-[#9E6EE5] to-[#FA75F8]">Get Started</button>
           </div>
         </div>
         <button onClick={() => setMenuOpen(!menuOpen)} className=" fixed top-5 right-5 mx-2 lg:hidden md:hidden">

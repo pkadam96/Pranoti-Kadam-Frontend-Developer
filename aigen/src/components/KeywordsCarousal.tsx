@@ -15,7 +15,7 @@ const KeywordsCarousal: React.FC = () => {
     const keywordsWithDuplicates = [...keywords, ...keywords];
 
     return (
-        <div className="keywords-carousal-container">
+        <div className="keywords-carousal-container mb-28">
             <div className="carousal right-to-left">
                 {keywordsWithDuplicates.map((keyword, index) => (
                     <div key={index} className="keyword frosted-glass" style={{ background: generateRandomGradient() }}>

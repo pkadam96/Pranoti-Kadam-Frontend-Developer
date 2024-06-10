@@ -3,16 +3,77 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     font-family: "Outfit", sans-serif;
     background-color: black;
     color: white;
 }
- 
+
 .frosted-glass {
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
-  } 
-  
+}
+
+.keywords-carousal-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; 
+}
+
+.carousal {
+    display: flex;
+    white-space: nowrap;
+}
+
+.right-to-left {
+    animation: moveRightToLeft 50s linear infinite;
+}
+
+.left-to-right {
+    animation: moveLeftToRight 50s linear infinite;
+}
+
+.keyword {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    color: white;
+    border-radius: 0.25rem;
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slide-in-right {
+    animation: slideInRight 0.5s ease-out;
+}

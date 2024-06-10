@@ -4,6 +4,7 @@ import { HowItWorks } from './components/HowItWorks';
 import { KeywordsCarousal } from "./components/KeywordsCarousal";
 import { CardsComponent } from "./components/CardsComponent";
 import { RoadMap } from "./components/RoadMap";
+import { Tokenomics } from "./components/Tokenomics";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <HowItWorks/>
       <KeywordsCarousal/>
       <CardsComponent/>
+      <Tokenomics/>
       <RoadMap/>
     </>
   )

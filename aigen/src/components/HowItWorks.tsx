@@ -3,6 +3,7 @@ import Avatar from '../assets/Avatar.png';
 
 const HowItWorks: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState<number>(0);
+    const [scrolling, setScrolling] = useState(false);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -12,13 +13,31 @@ const HowItWorks: React.FC = () => {
         return () => clearInterval(interval);
     }, []);
 
+    useEffect(() => {
+        let timer: number;
+        const handleScroll = () => {
+            setScrolling(true);
+            clearTimeout(timer);
+            timer = window.setTimeout(() => {
+                setScrolling(false);
+            }, 200);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            clearTimeout(timer);
+        };
+    }, []);
+    
     return (
         <>
-            <div className='flex flex-col lg:flex-row items-center gap-12 mb-24 lg:mb-36'>
-                <div>
+            <div className={`relative intro-container flex flex-col lg:flex-row items-center gap-12 mb-24 lg:mb-36 ${scrolling ? 'animate-breathing' : ''}`}>
+                <div className="breathing">
                     <img src={Avatar} alt="Avatar Image" className='p-4'/>
                 </div>
-                <div>
+                <div className="breathing">
                     <h1 className='text-4xl lg:font-semibold lg:text-6xl lg:leading-13 mb-8'>How it Works</h1>
                     <ul className="list-none p-0 m-0">
                         {["Select An Avatar", "Create or Generate Script", "Create AI Voices", "Publish"].map((item, index) => (
@@ -35,4 +54,4 @@ const HowItWorks: React.FC = () => {
     );
 }
 
-export { HowItWorks }
+export { HowItWorks };

@@ -19,8 +19,10 @@ const Footer: React.FC = () => {
                     <p className='text-xl lg:text-3xl lg:w-2/5'>Dash dash terraUSD neo uniswap kadena helium avalanche polymath bancor.</p>
                     <div className='lg:text-2xl mt-8'>
                         <p className='text-right'>Looking for help?</p>
-                        <input type="text" name="" id="" placeholder='Enter your Email' className='w-56 px-4 py-3 lg:px-8 lg:py-4 bg-transparent rounded-lg border-1 border-gray mr-1' />
-                        <button className='lg:w-32 lg:w-48 h-12 lg:h-16 text-sm lg:text-2xl px-8 lg:px-6 pt-2 lg:pt-3 pb-1.5 lg:pb-2.5 font-medium rounded-lg my-4 bg-gradient-to-r from-[#9E6EE5] to-[#FA75F8]'>Submit</button>
+
+                        <input type="text" name="" id="" placeholder='Enter your Email' className='w-56 lg:w px-4 py-3 lg:px-8 lg:py-4 bg-transparent rounded-lg border-1 border-gray mr-1' />
+                        
+                        <button className='lg:w-32 h-12 lg:h-16 text-sm lg:text-2xl px-8 lg:px-6 pt-2 lg:pt-3 pb-1.5 lg:pb-2.5 font-medium rounded-lg my-4 bg-gradient-to-r from-[#9E6EE5] to-[#FA75F8]'>Submit</button>
                     </div>
                 </div>
                 <div className='flex justify-between border-t-1 py-4 lg:py-12'>

@@ -27,7 +27,7 @@ const RoadMap: React.FC = () => {
 
     return (
        <>
-       <h1 className='bg-gradient-to-r from-[#FA75F8] to-[#9E6EE6] bg-clip-text text-transparent text-3xl text-center mt-28 mb-12 lg:mb-28'>Roadmap</h1>
+       <h1 className='bg-gradient-to-r from-[#FA75F8] to-[#9E6EE6] bg-clip-text text-transparent text-3xl text-center mt-16 lg:mt-28 mb-12 lg:mb-28'>Roadmap</h1>
          <div className='lg:ml-28'>
             <PhaseComponent title="PHASE 1" points={phase1Points} image={phase1} />
             <PhaseComponent title="PHASE 2" points={phase2Points} image={phase2} />

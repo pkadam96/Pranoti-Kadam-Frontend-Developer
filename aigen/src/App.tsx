@@ -3,6 +3,7 @@ import { IntroComponent } from "./components/IntroComponent"
 import { HowItWorks } from './components/HowItWorks';
 import { KeywordsCarousal } from "./components/KeywordsCarousal";
 import { CardsComponent } from "./components/CardsComponent";
+import { RoadMap } from "./components/RoadMap";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <HowItWorks/>
       <KeywordsCarousal/>
       <CardsComponent/>
+      <RoadMap/>
     </>
   )
 }

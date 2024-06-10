@@ -15,27 +15,27 @@ const KeywordsCarousal: React.FC = () => {
     const keywordsWithDuplicates = [...keywords, ...keywords];
 
     return (
-        <div className="keywords-carousal-container mb-28">
-            <div className="carousal right-to-left">
+        <div className="relative overflow-hidden w-full flex flex-col gap-5 mb-28">
+            <div className="flex whitespace-nowrap animate-right-to-left">
                 {keywordsWithDuplicates.map((keyword, index) => (
-                    <div key={index} className="keyword frosted-glass" style={{ background: generateRandomGradient() }}>
+                    <div key={index} className="frosted-glass inline-block px-4 py-2 mx-2 text-white rounded-md" style={{ background: generateRandomGradient()}}>
                         {keyword}
                     </div>
                 ))}
                 {keywordsWithDuplicates.map((keyword, index) => (
-                    <div key={index} className="keyword frosted-glass" style={{ background: generateRandomGradient() }}>
+                    <div key={index} className="frosted-glass inline-block px-4 py-2 mx-2 text-white rounded-md" style={{ background: generateRandomGradient()}}>
                     {keyword}
                 </div>
                 ))}
             </div>
-            <div className="carousal left-to-right">
+            <div className="flex whitespace-nowrap animate-left-to-right">
                 {keywordsWithDuplicates.map((keyword, index) => (
-                    <div key={index} className="keyword frosted-glass" style={{ background: generateRandomGradient() }}>
+                    <div key={index} className="frosted-glass inline-block px-4 py-2 mx-2 text-white rounded-md" style={{ background: generateRandomGradient()}}>
                         {keyword}
                     </div>
                 ))}
                 {keywordsWithDuplicates.map((keyword, index) => (
-                    <div key={index + keywordsWithDuplicates.length} className="keyword frosted-glass" style={{ background: generateRandomGradient() }}>
+                    <div key={index + keywordsWithDuplicates.length} className="frosted-glass inline-block px-4 py-2 mx-2 text-white rounded-md"style={{ background: generateRandomGradient() }}>
                         {keyword}
                     </div>
                 ))}

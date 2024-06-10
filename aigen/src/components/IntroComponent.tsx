@@ -4,7 +4,7 @@ import introImg from '../assets/IntroImage.png';
 const IntroComponent: React.FC = () => {
     return (
         <>
-            <div className='relative h-screen flex items-center justify-center mt-0 lg:m-44'>
+            <div className='relative h-72 lg:h-screen flex items-center justify-center mt-32 mb-16 lg:mt-28 lg:m-44'>
                 <div className="absolute inset-0 z-0">
                     <img src={introImg} alt="Introduction Image" className="object-contain w-full h-full" />
                 </div>

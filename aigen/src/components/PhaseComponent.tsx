@@ -49,7 +49,7 @@ const PhaseComponent: React.FC<PhaseComponentProps> = ({ title, points, image })
             <img
                 src={image}
                 alt={title}
-                className={`flex-1 w-full md:w-auto h-auto ${isVisible ? 'slide-in-right' : ''}`}
+                className={`flex-1 w-full md:w-auto h-auto ${isVisible ? 'animate-slide-in-right' : ''}`}
             />
         </div>
     );

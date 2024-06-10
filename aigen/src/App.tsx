@@ -5,6 +5,7 @@ import { KeywordsCarousal } from "./components/KeywordsCarousal";
 import { CardsComponent } from "./components/CardsComponent";
 import { RoadMap } from "./components/RoadMap";
 import { Tokenomics } from "./components/Tokenomics";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <CardsComponent/>
       <Tokenomics/>
       <RoadMap/>
+      <Footer/>
     </>
   )
 }

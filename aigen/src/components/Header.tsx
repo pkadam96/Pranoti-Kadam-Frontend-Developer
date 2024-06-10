@@ -8,7 +8,7 @@ const Header: React.FC = () => {
     return (
         <>
             <Navbar />
-              <div className='relative top-16 lg:top-0 w-full h-screen flex lg:flex-row gap-6 lg:gap-24  z-20'>
+              <div className='relative top-16 lg:top-0 w-full h-96 lg:h-screen flex lg:flex-row gap-6 lg:gap-24  z-20'>
                 <div className='absolute inset-0 lg:relative flex  lg:hidden'>
                     <div className='flex w-full'>
                         <img src={img1} className='w-1/3'/>
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
                         <p className='px-2 py-0.5 rounded-lg frosted-glass inline-block mb-8 text-sm lg:text-lg lg:mb-16 lg:mt-28'>🎉New in AI.GEN: Real Time Interaction</p>
                         <h1 className='text-2xl lg:text-5xl font-medium leading-8 lg:leading-12' style={{ color: "#e9e8e9" }}>IOTA polygon serum ipsum <br /> <span style={{ color: "#a39faa" }}>WAX terraUSD gala THETA.</span></h1>
                         <h2 className='leading-6 lg:leading-10 text-sm lg:text-2xl my-4 lg:my-8'>Chiliz serum TRON dash aave cardano crypto celo. Golem <br />ankr bancor horizen ethereum quant bitcoin.</h2>
-                        <button className="w-32 lg:w-48 h-12 lg:h-16 text-sm lg:text-2xl px-4 lg:px-6 pt-2 lg:pt-3 pb-1.5 lg:pb-2.5 font-medium rounded-lg my-4" style={{ background: 'linear-gradient(45deg, #9E6EE5 0%, #FA75F8 100%)' }}>Get Started</button>
+                        <button className="w-32 lg:w-48 h-12 lg:h-16 text-sm lg:text-2xl px-4 lg:px-6 pt-2 lg:pt-3 pb-1.5 lg:pb-2.5 font-medium rounded-lg my-4 bg-gradient-to-r from-[#9E6EE5] to-[#FA75F8]" >Get Started</button>
                     </div>
                 </div>
                 <div className='hidden lg:flex lg:self-end lg:relative lg:z-0 lg:ml-auto'>

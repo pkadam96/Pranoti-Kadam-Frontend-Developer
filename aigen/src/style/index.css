@@ -7,6 +7,11 @@ body {
     font-family: "Outfit", sans-serif;
     background-color: black;
     color: white;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to right, #3b2d59, #15101f, #000); 
 }
 
 .frosted-glass {
@@ -16,7 +21,22 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
 }
 
-.bg-blur {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+.intro-container {
+    transition: transform 5s ease; 
+}
+
+@keyframes breathing {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-55px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.animate-breathing {
+    animation: breathing 5s ease-in-out infinite; /* Adjusted easing for smoother animation */
 }

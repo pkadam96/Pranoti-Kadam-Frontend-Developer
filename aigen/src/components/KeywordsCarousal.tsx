@@ -15,7 +15,7 @@ const KeywordsCarousal: React.FC = () => {
     const keywordsWithDuplicates = [...keywords, ...keywords];
 
     return (
-        <div className="relative overflow-hidden w-full flex flex-col gap-5 mb-28">
+        <div className="relative overflow-hidden w-full flex flex-col gap-5 mb-24">
             <div className="flex whitespace-nowrap animate-right-to-left">
                 {keywordsWithDuplicates.map((keyword, index) => (
                     <div key={index} className="frosted-glass inline-block px-4 py-2 mx-2 text-white rounded-md" style={{ background: generateRandomGradient()}}>

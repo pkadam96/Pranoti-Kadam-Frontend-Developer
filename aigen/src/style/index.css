@@ -22,21 +22,6 @@ body {
 }
 
 .intro-container {
-    transition: transform 5s ease; 
+    transition: transform 5s ease-in-out; 
 }
 
-@keyframes breathing {
-    0% {
-        transform: translateY(10px);
-    }
-    50% {
-        transform: translateY(-55px);
-    }
-    100% {
-        transform: translateY(10px);
-    }
-}
-
-.animate-breathing {
-    animation: breathing 5s ease-in-out infinite; /* Adjusted easing for smoother animation */
-}

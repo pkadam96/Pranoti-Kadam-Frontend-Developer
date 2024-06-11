@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
     <>
       <div className="fixed top-0 w-full text-white flex items-center gap-8 px-12 py-4 lg:px-24 lg:py-4 border-b border-inherit frosted-glass z-30">
         <h1 className="text-xl font-medium tracking-widest">AI.GEN</h1>
-        <div className={`fixed top-16 left-0 w-full h-96 lg:h-full bg-black flex gap-4 flex-col items-center justify-center transition-transform transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} lg:static lg:bg-transparent lg:flex-row lg:justify-between lg:translate-x-0 md:static md:flex-row md:justify-between md:translate-x-0 z-70 `}>
+        <div className={`fixed top-16 left-0 w-full h-screen-full lg:h-full bg-black flex gap-4 flex-col items-center justify-center transition-transform transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} lg:static lg:bg-transparent lg:flex-row lg:justify-between lg:translate-x-0 md:static md:flex-row md:justify-between md:translate-x-0 z-70 `}>
           <ul className="flex flex-col lg:flex-row md:flex-row gap-6">
             <li className="text-center"><a href="#features">Features</a></li>
             <li className="text-center"><a href="#roadmap">Roadmap</a></li>

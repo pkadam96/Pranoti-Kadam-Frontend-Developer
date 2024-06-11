@@ -23,12 +23,12 @@ const Header: React.FC = () => {
     return (
         <>
             <Navbar />  
-              <div className='relative top-16 lg:top-0 w-full h-96 lg:h-screen flex lg:flex-row gap-6 lg:gap-24  z-20 bg1'>
+              <div className={`relative top-16 lg:top-0 w-full h-screen-100 lg:h-screen flex lg:flex-row gap-6 lg:gap-24  z-20 bg1`}>
                 <div className='absolute inset-0 lg:relative flex  lg:hidden'>
                     <div className='flex w-full'>
-                        <img src={img1} className='w-1/3'/>
+                        <img id="img1" src={img1} className='w-1/3'/>
                         <img src={img2} className='w-1/3'/>
-                        <img src={img3} className='w-1/3'/>
+                        <img id="img3" src={img3} className='w-1/3'/>
                     </div>
                 </div>              
                 <div className='flex justify-center items-center lg:pt-0 lg:ml-40 z-10 lg:z-auto bg-opacity-50 lg:bg-opacity-0 bg-black lg:bg-transparent'>

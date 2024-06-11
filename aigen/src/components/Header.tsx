@@ -7,18 +7,21 @@ import { Navbar } from './Navbar';
 const Header: React.FC = () => {
     useEffect(() => {
         const handleScroll = () => {
-            const img1Element = document.getElementById('img1');
-            const img3Element = document.getElementById('img3');
-            if (img1Element && img3Element) {
-                const scrollPosition = window.scrollY;
-                img1Element.style.transform = `translateY(-${scrollPosition * 1}px)`; 
-                img3Element.style.transform = `translateY(-${scrollPosition * 1}px)`;
-            }
+            const elementIds = ['img1', 'img2', 'img3', 'img4'];
+    
+            elementIds.forEach(id => {
+                const element = document.getElementById(id);
+                if (element) {
+                    const scrollPosition = window.scrollY;
+                    element.style.transform = `translateY(-${scrollPosition * 1}px)`;
+                }
+            });
         };
-
+    
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+    
 
     return (
         <>
@@ -26,9 +29,9 @@ const Header: React.FC = () => {
               <div className={`relative top-16 lg:top-0 w-full h-screen-100 lg:h-screen flex lg:flex-row gap-6 lg:gap-24  z-20 bg1`}>
                 <div className='absolute inset-0 lg:relative flex  lg:hidden'>
                     <div className='flex w-full'>
-                        <img id="img1" src={img1} className='w-1/3'/>
+                        <img id='img1' src={img1} className=' w-1/3'/>
                         <img src={img2} className='w-1/3'/>
-                        <img id="img3" src={img3} className='w-1/3'/>
+                        <img id='img3' src={img3} className=' w-1/3'/>
                     </div>
                 </div>              
                 <div className='flex justify-center items-center lg:pt-0 lg:ml-40 z-10 lg:z-auto bg-opacity-50 lg:bg-opacity-0 bg-black lg:bg-transparent'>
@@ -40,9 +43,9 @@ const Header: React.FC = () => {
                     </div>
                 </div>
                 <div className='hidden lg:flex lg:self-end lg:relative lg:z-0 lg:ml-auto'>
-                    <img id="img1" src={img1} alt="" className='w-full h-auto opacity-50 lg:opacity-100' />
+                    <img id='img2' src={img1} alt="" className='img1 w-full h-auto opacity-50 lg:opacity-100' />
                     <img src={img2} alt="" className='w-full h-auto opacity-50 lg:opacity-100' />
-                    <img id="img3" src={img3} alt="" className='w-full h-auto opacity-50 lg:opacity-100' />
+                    <img id='img4' src={img3} alt="" className='img3w-full h-auto opacity-50 lg:opacity-100' />
                 </div>
             </div>
         </>

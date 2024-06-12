@@ -46,3 +46,4 @@ npm run dev
 ```
 
 ## Screenshots
+![Large Screen](https://drive.google.com/file/d/1qv21FxuxRrZmVGUjFYT0YhlkwPq96irc/view?usp=sharing)

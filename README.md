@@ -19,6 +19,13 @@ You can view the live demo of the application [here](https://aigen-gamma.vercel.
 - **Roadmap**: Project phases with corresponding images.
 - **Footer**: Includes a "Get Started" button, email subscription form, and social media links.
 
+ ## Technologies Used
+<ul>
+<li>ReactJs</li>
+<li>Tailwind CSS</li>
+<li>Typescript</li> 
+</ul>
+
 ## Installation
 
 1. Clone the repository to your local machine:
@@ -45,5 +52,3 @@ npm install
 npm run dev
 ```
 
-## Screenshots
-![large screen](https://drive.google.com/file/d/1qv21FxuxRrZmVGUjFYT0YhlkwPq96irc/view?usp=sharing)

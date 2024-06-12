@@ -54,4 +54,4 @@ npm run dev
 
 ## Screenshots
 
-![Landing Page](https://github.com/pkadam96/Pranoti-Kadam-Frontend-Developer/commit/fb49364253635a71a89e775f25b75b279a7040e8)
+![Landing Page](landingPage-screenshot.png)

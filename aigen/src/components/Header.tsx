@@ -34,7 +34,7 @@ const Header: React.FC = () => {
                         <img id='img3' src={img3} className=' w-1/3'/>
                     </div>
                 </div>              
-                <div className='flex justify-center items-center lg:pt-0 lg:ml-40 z-10 lg:z-auto bg-opacity-50 lg:bg-opacity-0 bg-black lg:bg-transparent'>
+                <div className='w-full xl:w-auto lg:w-auto flex justify-center items-center lg:pt-0 lg:ml-40 z-10 lg:z-auto bg-opacity-50 lg:bg-opacity-0 bg-black lg:bg-transparent'>
                     <div className='text-center lg:text-left p-6 lg:p-0'>
                         <p className='px-2 py-0.5 rounded-lg frosted-glass inline-block mb-8 text-sm lg:text-lg lg:mb-16 lg:mt-28'>🎉New in AI.GEN: Real Time Interaction</p>
                         <h1 className='text-2xl lg:text-5xl font-medium leading-8 lg:leading-12' style={{ color: "#e9e8e9" }}>IOTA polygon serum ipsum <br /> <span style={{ color: "#a39faa" }}>WAX terraUSD gala THETA.</span></h1>
